@@ -1,5 +1,7 @@
 # The Dirtybird toolhead
 
+![Dirtybird Toolhead](./images/hero.jpg)
+
 Developed as the successor of the Frankensherpa toolhead.
 
 Like its predecessor, Dirtybird is designed to:
