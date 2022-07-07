@@ -24,7 +24,7 @@ And the following hotends:
 
 - Dragon
 - NF Crazy
-- Rapido
+- Rapido (HF only, UHF not supported yet)
 
 ### BOM
 
