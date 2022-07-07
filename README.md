@@ -24,6 +24,7 @@ And the following hotends:
 
 - Dragon
 - NF Crazy
+- Rapido
 
 ### BOM
 
