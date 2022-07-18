@@ -45,5 +45,6 @@ And the following hotends:
 ### Known issues/to do list
 
 - Potentially insufficient clearance between the Dragon core and the heater block of the Dragon hotend; as a result, the core may melt or otherwise cook, especially when using a silicone sock
+  - Improvements have been made, but we are gathering feedback from real world usage.
 - Rename files for version control/clarity (i.e. similar to Annex)
 - Printed L/R marks for the fan ducts
