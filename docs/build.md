@@ -1,4 +1,4 @@
-# Dirtybird Build Instructions
+# DirtyBird Build Instructions
 
 See [printed parts](./printed-parts.md) for a list of required 3d printed parts.
 

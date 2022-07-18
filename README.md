@@ -1,10 +1,10 @@
-# The Dirtybird toolhead
+# The DirtyBird toolhead
 
-![Dirtybird Toolhead](./images/hero.jpg)
+![DirtyBird Toolhead](./images/hero.jpg)
 
 Developed as the successor of the Frankensherpa toolhead.
 
-Like its predecessor, Dirtybird is designed to:
+Like its predecessor, DirtyBird is designed to:
 
 - Be lightweight, allowing greater acceleration and potentially improved resonance
 - Have excellent cooling performance, with dual blower fans to improve overhang performance with many materials (including PLA)
@@ -14,7 +14,7 @@ Like its predecessor, Dirtybird is designed to:
 - Remain compatible with stock Voron (and Ramalama) idlers
 - Support Roadkill-based chainless toolhead boards
 
-Currently, Dirtybird supports the following extruders (and more via usermods):
+Currently, DirtyBird supports the following extruders (and more via usermods):
 
 - LGX mini
 - Sherpa mini

@@ -1,10 +1,10 @@
-# Dirtybird BOM
+# DirtyBird BOM
 
 Exact fastener counts may differ slightly based on your configuration.
 
 Purchasing spares is highly recommended.
 
-For other projects that are used in Dirtybird (e.g. Klicky probe) refer to their respective documentation pages for an up-to-date BOM.
+For other projects that are used in DirtyBird (e.g. Klicky probe) refer to their respective documentation pages for an up-to-date BOM.
 
 ### Essential Fasteners
 
