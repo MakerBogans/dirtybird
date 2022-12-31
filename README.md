@@ -1,6 +1,6 @@
 # The DirtyBird toolhead
 
-![DirtyBird Toolhead](./images/hero.jpg)
+![DirtyBird Toolhead](./docs/img/hero.jpg)
 
 Developed as the successor of the Frankensherpa toolhead.
 

@@ -1,0 +1,543 @@
+<!doctype html>
+<html class="no-js" lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dirtybird configurator</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+  <main>
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col">
+          <img src="img/hero.jpg" class="img-fluid" alt="Responsive image">
+        </div>
+      </div>
+      <div class="row mb-4">
+        <div class="col">
+          <h1>Dirtybird configurator <small class="text-muted">very beta</small></h1>
+        </div>
+      </div>
+
+      <form class="mb-4">
+
+        <h4>Hardware</h4>
+
+        <div class="row">
+          <label for="carriage" class="col col-sm-4 col-form-label">Carriage:</label>
+          <div class="col">
+            <select id="carriage" name="carriage" class="db-input form-select">
+              <option value="mgn12">MGN12</option>
+              <option value="mgn9" disabled>MGN9 (Not supported)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <label for="belts" class="col col-sm-4 col-form-label">Belts:</label>
+          <div class="col">
+            <select id="belts" name="belts" class="db-input form-select">
+              <option value="6mm">6mm</option>
+              <option value="9mm" disabled>9mm Fatso (Not supported)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <label for="probe" class="col col-sm-4 col-form-label">Probe:</label>
+          <div class="col">
+            <select id="probe" name="probe" class="db-input form-select">
+              <option value="klicky">Klicky</option>
+              <option value="euclid">Euclid</option>
+              <option value="eureka" disabled>Eureka (Not supported)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <label for="cabling" class="col col-sm-4 col-form-label">Cabling:</label>
+          <div class="col">
+            <select id="cabling" name="cabling" class="db-input form-select">
+              <option value="rkel">Roadkill Longboi</option>
+              <option value="rkes">Roadkill Square</option>
+              <option value="cable-chain">Cable chain</option>
+              <option value="none">None</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <label for="extruder" class="col col-sm-4 col-form-label">Extruder:</label>
+          <div class="col">
+            <select id="extruder" name="extruder" class="db-input form-select">
+              <option value="lgx-lite">LGX Lite</option>
+              <option value="sherpa-mini">Sherpa mini</option>
+              <option value="sherpa-micro">Sherpa micro</option>
+              <option value="cnc-vz-hextrudort">CNC Vz-HextrudORT</option>
+              <option value="orbiter2">Orbiter 2</option>
+              <option value="cw2" disabled>Clockwork 2 (Not supported)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <label for="hotend" class="col col-sm-4 col-form-label">Hotend:</label>
+          <div class="col">
+            <select id="hotend" name="hotend" class="db-input form-select">
+              <option value="dragon">Dragon SF/HF</option>
+              <option value="dragon-uhf">Dragon UHF</option>
+              <option value="nf-crazy">NF Crazy SF/HF</option>
+              <option value="nf-crazy-volc">NF Crazy Volcano</option>
+              <option value="rapido">Rapido SF/HF</option>
+              <option value="rapido-uhf" disabled>Rapido UHF (Not supported)</option>
+              <option value="bambu" disabled>Bambu (Not supported)</option>
+              <option value="revo">Revo</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <label for="fan-left" class="col col-sm-4 col-form-label">Fan left:</label>
+          <div class="col">
+            <select id="fan-left" name="fan-left" class="db-input form-select">
+              <option value="4510-classic">4510 Blower fan - classic tabs</option>
+              <option value="4510-modern" disabled>4510 Blower fan - recessed tabs (Not supported)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row mb-4">
+          <label for="fan-right" class="col col-sm-4 col-form-label">Fan right:</label>
+          <div class="col">
+            <select id="fan-right" name="fan-right" class="db-input form-select">
+              <option value="4510-classic">4510 Blower fan - classic tabs</option>
+              <option value="4510-modern" disabled>4510 Blower fan - recessed tabs (Not supported)</option>
+            </select>
+          </div>
+        </div>
+
+        <h4>Dirtybird customisation</h4>
+
+        <div class="row">
+          <label for="hef-fan-cover" class="col col-sm-4 col-form-label">Hotend fan cover:</label>
+          <div class="col">
+            <select id="hef-fan-cover" name="hef-fan-cover" class="db-input form-select">
+              <option value="two-piece">2 piece</option>
+              <option value="single-piece">Single (boring but easy print)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <label for="neopixel" class="col col-sm-4 col-form-label">Neopixel:</label>
+          <div class="col">
+            <select id="neopixel" name="neopixel" class="db-input form-select">
+              <option value="neo-orig">None / Original</option>
+              <option value="neo-two-piece">Screw in mount</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <label for="fan-cover" class="col col-sm-4 col-form-label">Fan covers:</label>
+          <div class="col">
+            <select id="fan-cover" name="fan-cover" class="db-input form-select">
+              <option value="printed-cover">Printed cover</option>
+              <option value="metal-cover">Metal cover</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <label for="fan-ducts" class="col col-sm-4 col-form-label">Fan ducts:</label>
+          <div class="col">
+            <select id="fan-ducts" name="fan-ducts" class="db-input form-select">
+              <option value="carpet-bomb">Carpet bomb</option>
+              <option value="bob">BOB</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6">
+            <div id="invalid-message" hidden class="alert alert-danger" role="alert">
+              <p>Could not generate due to invalid selections</p>
+            </div>
+          </div>
+        </div>
+
+      </form>
+
+      <div id="alerts">
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <h2>Generated printed parts list:</h2>
+        </div>
+      </div>
+
+      <table class="table table-bordered table-striped table-hover">
+        <thead>
+          <tr>
+            <th>Filename</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody id="printed-parts-list" class="table-group-divider">
+        </tbody>
+      </table>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <h2>Generated BOM:</h2>
+        </div>
+      </div>
+
+      <table class="table table-bordered table-striped table-hover">
+        <thead>
+          <tr>
+            <th>Item</th>
+            <th>Qty</th>
+          </tr>
+        </thead>
+        <tbody id="bom-list" class="table-group-divider">
+          <tr>
+            <td><a href="#">Item</a></td>
+            <td>10</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <h2>Recommended print settings</h2>
+          <p>Follow Voron printing guidelines. Remember: parts are not pre-oriented for printing.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script type="text/javascript">
+  const inputs = document.getElementsByClassName("db-input form-select");
+
+  const carriage = document.getElementById("carriage");
+  const belts = document.getElementById("belts");
+  const probe = document.getElementById("probe");
+  const cabling = document.getElementById("cabling");
+  const extruder = document.getElementById("extruder");
+  const hotend = document.getElementById("hotend");
+  const hefFanCover = document.getElementById("hef-fan-cover");
+  const neopixel = document.getElementById("neopixel");
+  const fanLeft = document.getElementById("fan-left");
+  const fanRight = document.getElementById("fan-right");
+  const fanCover = document.getElementById("fan-cover");
+  const fanDucts = document.getElementById("fan-ducts");
+  const invalidMessage = document.getElementById("invalid-message");
+
+  const printedPartsList = document.getElementById("printed-parts-list");
+  const bomList = document.getElementById("bom-list");
+  const alerts = document.getElementById("alerts");
+
+  const modelViewer = document.getElementById("model-viewer");
+
+  const bomParts = {
+    m3_heatset: "Brass M3x4x5 Threaded Inserts",
+    m2x10: "M2x10 Self tapped screw",
+    m3x8_shcs: "M3x8 SHCS",
+    m3x10_shcs: "M3x10 SHCS",
+    m3x12_shcs: "M3x12 SHCS",
+    m3x14_shcs: "M3x14 SHCS",
+    m3x16_shcs: "M3x16 SHCS",
+    m3x20_shcs: "M3x20 SHCS",
+    m3x6_bhcs: "M3X6 BHCS",
+    m3x12_bhcs: "M3X12 BHCS",
+    m3x20_bhcs: "M3X20 BHCS",
+    m3x6_fhcs: "M3X6 FHCS",
+    m2_5x8_bhcs: "M2.5x8 BHCS",
+    m2_5x10_bhcs: "M2.5x10 BHCS",
+    m2_5x12_bhcs: "M2.5x12 BHCS",
+    magnet_6x3: "6x3 Magnet",
+  };
+
+  let bomTemplate = {};
+  for (key in bomParts) {
+    bomTemplate[key] = 0;
+  }
+
+  function refreshCalculations() {
+    let failure = false;
+    let parts = [];
+    let bom = {...bomTemplate};
+    let warnings = [];
+
+    switch(carriage.value) {
+    case "mgn9":
+      failure = true;
+      break;
+    case "mgn12":
+      break;
+    }
+
+    switch(belts.value) {
+    case "6mm":
+      break;
+    case "9mm":
+      failure = true;
+      break;
+    }
+
+    // Common carriage fasteners
+    bom.m2x10 += 2;
+    bom.m3x8_shcs += 4;
+    bom.m3x20_shcs += 4;
+    bom.m3_heatset += 2;
+    switch(probe.value) {
+    case "eureka":
+      failure = true;
+      break;
+    case "klicky":
+      parts.push(["3mf/Carriage/DB Klicky Carriage V1.3mf", "Probe offset may not work with default klicky docks. You may need to use the adjustable dock."]);
+      bom.magnet_6x3 += 3;
+      break;
+    case "euclid":
+      parts.push(["3mf/Carriage/DB Euclid Carriage.3mf", ""]);
+      parts.push(["3mf/Carriage/DB Euclid Dock Gantry Mount.3mf", "Modified dock to support slightly offset carriage."]);
+      break;
+    }
+
+    switch(cabling.value) {
+    case "rkel":
+      parts.push(["3mf/Cable Management/RKE Ribbon Mount Body.3mf", ""]);
+      bom.m3x6_bhcs += 2;
+      bom.m3x12_shcs += 2;
+      bom.m3_heatset += 1;
+      break;
+    case "rkes":
+      parts.push(["usermods/Verethy/Cable Holder for Sheath/Cable Holder Body Sheath.3mf", "Intended for use with tempflex + cable sheath."]);
+      bom.m3x12_shcs += 2;
+      warnings.push("RKE Square parts and fasteners unknown");
+      break;
+    case "cable-chain":
+      if (extruder.value != "sherpa-micro") {
+        parts.push(["usermods/DMan/dirty-bird-cable-chain-mount/dirty-bird-chain-mount.3mf", "Note, the cable chain mount is only intended to be used with Sherpa mini and Sherpa micro, there are known issues with LGX Lite."]);
+      } else {
+        parts.push(["usermods/DMan/dirty-bird-cable-chain-mount/dirty-bird-chain-mount.3mf", ""]);
+      }
+      bom.m3_heatset += 3;
+      bom.m3x12_shcs += 2;
+      bom.m3x6_fhcs += 3;
+      break;
+    case "none":
+      break;
+    }
+
+    switch(extruder.value) {
+    case "lgx-lite":
+      parts.push(["3mf/Extruder/DB - LGX Lite Mount V1.3mf", ""]);
+      bom.m3x6_bhcs += 6;
+      break;
+    case "sherpa-mini":
+      parts.push(["3mf/Extruder/DB - Sherpa Mini Mount V1.3mf", ""]);
+      bom.m3_heatset += 2;
+      bom.m3x6_bhcs += 2;
+      bom.m3x10_shcs += 2;
+      break;
+    case "sherpa-micro":
+      if (cabling.value == "rkel" || cabling.value == "rkes") {
+        parts.push(["3mf/Cable Management/DB - Cable Mount Spacer V1.3mf", "Sherpa micro does not require an adaptor plate but does need a spacer in place of the adaptor for correct ribbon support height."]);
+      } else {
+        parts.push(["", "Sherpa micro does not require an adaptor plate"]);
+      }
+      bom.m3_heatset += 2;
+      bom.m3x10_shcs += 2;
+      break;
+    case "cnc-vz-hextrudort":
+      parts.push(["3mf/Extruder/DB - LGX Lite Mount V1.3mf", "CNC VZ-HextrudORT uses the front two screws from the LGX Lite plate"]);
+      bom.m3x6_bhcs += 4;
+      break;
+    case "orbiter2":
+      parts.push(["usermods/Sushei/DB Orbiter V2/Dirty_Bird_-_Orbiter_v2_Mount.3mf", ""]);
+      bom.m3x6_bhcs += 2;
+      warnings.push("Orbiter 2 fasteners unknown");
+      break;
+    case "cw2":
+      failure = true;
+      break;
+    }
+
+    switch(hotend.value) {
+    case "dragon":
+    case "dragon-uhf":
+      parts.push(["3mf/Core/DB Dragon-Rapido Core V1.1.3mf", ""]);
+      warnings.push("Dragon fasteners unknown");
+      bom.m2_5x8_bhcs += 4;
+      break;
+    case "nf-crazy":
+    case "nf-crazy-volc":
+      parts.push(["3mf/Core/DB Crazy Core V1.3mf", ""]);
+      bom.m2_5x12_bhcs += 4;
+      warnings.push("Use M2.5 fasteners included with NF Crazy");
+      break;
+    case "rapido":
+      parts.push(["3mf/Core/DB Dragon-Rapido Core V1.1.3mf", ""]);
+      bom.m2_5x8_bhcs += 4;
+      warnings.push("Use M2.5 fasteners included with Rapido");
+      break;
+    case "rapido-uhf":
+      failure = true;
+      break;
+    case "bambu":
+      failure = true;
+      break;
+    case "revo":
+      parts.push(["usermods/Verethy/Revo Core/DB Revo Core.stl", ""]);
+      bom.m3x8_shcs += 4;
+      break;
+    }
+
+    // All combinations of HEF use 4 M3x20 fasteners.
+    bom.m3_heatset += 4;
+    bom.m3x20_bhcs += 3;
+    switch ([hefFanCover.value, neopixel.value].join(".")) {
+    case "two-piece.neo-orig":
+      parts.push(["3mf/Hotend Cooling/DB Fan Insert V1.1.3mf", ""]);
+      parts.push(["3mf/Hotend Cooling/DB Fan Front Brace V1.1.3mf", ""]);
+      break;
+    case "two-piece.neo-two-piece":
+      parts.push(["usermods/Sushei/Sushei's Version/3mf/[Rev5] Fan Brace.3mf", ""]);
+      parts.push(["usermods/Sushei/Sushei's Version/3mf/[Rev5] Fan Accent.3mf", ""]);
+      parts.push(["usermods/Sushei/Sushei's Version/3mf/[Rev5] DB LED Mount.3mf", ""]);
+      break;
+    case "single-piece.neo-orig":
+      parts.push(["3mf/Hotend Cooling/DB Fan Insert V1.1.3mf", ""]);
+      parts.push(["3mf/Hotend Cooling/DB Fan Front Brace V1.1.3mf", "(Merge the two parts in the slicer)"]);
+      break;
+    case "single-piece.neo-two-piece":
+      parts.push(["usermods/Sushei/Sushei's Version/3mf/[Rev5] Fan Brace.3mf", ""]);
+      parts.push(["usermods/Sushei/Sushei's Version/3mf/[Rev5] Fan Accent.3mf", "(Merge the two fan parts in the slicer)"]);
+      parts.push(["usermods/Sushei/Sushei's Version/3mf/[Rev5] DB LED Mount.3mf", ""]);
+      bom.m2x10 += 2;
+      break;
+    }
+
+    switch (fanLeft.value) {
+    case "4510-classic":
+      bom.m3_heatset += 3;
+      bom.m3x12_bhcs += 3;
+      break;
+    case "4510-modern":
+      failure = true;
+      break;
+    }
+
+    switch (fanRight.value) {
+    case "4510-classic":
+      bom.m3_heatset += 3;
+      bom.m3x12_bhcs += 3;
+      break;
+    case "4510-modern":
+      failure = true;
+      break;
+    }
+
+    switch ([hotend.value, fanCover.value, fanDucts.value].join(".")) {
+    case "dragon.metal-cover.bob":
+    case "nf-crazy.metal-cover.bob":
+    case "revo.metal-cover.bob":
+      parts.push(["3mf/Part Cooling/Dragon - NF Crazy/Dirty Bird - BOB Duct Left V1 v1.1.3mf", ""]);
+      parts.push(["3mf/Part Cooling/Dragon - NF Crazy/Dirty Bird - BOB Duct Right V1 v1.1.3mf", ""]);
+      break;
+
+    case "dragon.printed-cover.bob":
+    case "nf-crazy.printed-cover.bob":
+    case "revo.printed-cover.bob":
+      parts.push(["3mf/Part Cooling/Dragon - NF Crazy/Dirty Bird - Bob Duct Left V1 with Cover.3mf", ""]);
+      parts.push(["3mf/Part Cooling/Dragon - NF Crazy/Dirty Bird - Bob Duct Right V1 with Cover.3mf", ""]);
+      break;
+
+    case "dragon.metal-cover.carpet-bomb":
+    case "nf-crazy.metal-cover.carpet-bomb":
+    case "revo.metal-cover.carpet-bomb":
+      parts.push(["3mf/Part Cooling/Dragon - NF Crazy/Carpet Bmb Dragon Crazy Left v1.3mf", ""]);
+      parts.push(["3mf/Part Cooling/Dragon - NF Crazy/Carpet Bmb Dragon Crazy Right v1.3mf", ""]);
+      break;
+
+    case "dragon.printed-cover.carpet-bomb":
+    case "nf-crazy.printed-cover.carpet-bomb":
+    case "revo.printed-cover.carpet-bomb":
+      parts.push(["3mf/Part Cooling/Dragon - NF Crazy/Carpet Bmb Dragon Crazy With Cover Left v1.3mf", ""]);
+      parts.push(["3mf/Part Cooling/Dragon - NF Crazy/Carpet Bmb Dragon Crazy With Cover Right v1.3mf", ""]);
+      break;
+
+    case "dragon-uhf.metal-cover.carpet-bomb":
+    case "nf-crazy-volc.metal-cover.carpet-bomb":
+    case "rapido.metal-cover.carpet-bomb":
+      parts.push(["3mf/Part Cooling/Rapido HF/Carpet Bmb Rapido Left v1.3mf", ""]);
+      parts.push(["3mf/Part Cooling/Rapido HF/Carpet Bmb Rapido Right v1.3mf", ""]);
+      break;
+
+    case "dragon-uhf.printed-cover.carpet-bomb":
+    case "nf-crazy-volc.printed-cover.carpet-bomb":
+    case "rapido.printed-cover.carpet-bomb":
+      parts.push(["3mf/Part Cooling/Rapido HF/Carpet Bmb Rapido Left With Cover v1.3mf", ""]);
+      parts.push(["3mf/Part Cooling/Rapido HF/Carpet Bmb Rapido Right With Cover v1.3mf", ""]);
+      break;
+
+    default:
+      failure = true;
+      break;
+    }
+
+    invalidMessage.hidden = !failure;
+    if (failure) {
+      printedPartsList.innerHTML = "";
+      return
+    }
+
+    let partsHTML = "";
+    for (part of parts) {
+      partsHTML += "<tr>"
+      + "<td><a href=\"https://github.com/MakerBogans/dirtybird/raw/main/" + part[0] + "\">" + part[0] + "</a></td>"
+      + "<td>" + part[1] + "</td>"
+      + "</tr>";
+    }
+    printedPartsList.innerHTML = partsHTML;
+
+    let bomHTML = "";
+    for (key in bom) {
+      if (bom[key] == 0) {
+        continue;
+      }
+      bomHTML += "<tr>"
+      + "<td>" + bomParts[key] + "</a></td>"
+      + "<td>" + bom[key] + "</td>"
+      + "</tr>";
+    }
+    bomList.innerHTML = bomHTML;
+
+    let alertsHTML = "";
+    for (warning of warnings) {
+      alertsHTML += "<div class=\"alert alert-warning mb-3\" role=\"alert\">" + warning + "</div>";
+    }
+    alerts.innerHTML = alertsHTML;
+  }
+
+  for (input of inputs) {
+    let value = localStorage.getItem(input.name)
+    if (value != null) {
+      input.value = value;
+    }
+    input.addEventListener("input", (event) => {
+      localStorage.setItem(event.target.name, event.target.value)
+      refreshCalculations();
+    });
+  }
+
+  refreshCalculations()
+</script>
+</body>
+</html>
