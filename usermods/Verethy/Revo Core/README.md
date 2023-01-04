@@ -17,6 +17,7 @@ None
 # Update notes
 
 Compatible with Dragon/Crazy ducts.
+Bowden length: 22.4 to top of core.
 
 # Instructions
 
